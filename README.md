@@ -7,7 +7,6 @@ Check your device when you have anything to change on your PC or mobile.
 `opgg-use-device-detector` basically provides physical device data and logical device data.
 
 - `Physical device`: Device information that was accessed when the site was first accessed.
-
 - `Logical device`: Device information that changes internally when changing the current state to an arbitrary device.
 
 ## Requirement
