@@ -1,0 +1,29 @@
+{
+  "projectName": "opgg-use-device-detector",
+  "projectOwner": "donavon",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "JJoGeon",
+      "name": "Cho Geon Ho",
+      "avatar_url": "",
+      "profile": "https://jjogeon.github.io/",
+      "contributions": [
+        "example",
+        "ideas",
+        "maintenance",
+        "review",
+        "tool",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true
+}
