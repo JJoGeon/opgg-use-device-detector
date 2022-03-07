@@ -1,13 +1,19 @@
 
 const initialize = (deviceDetector, storageKey, storageProvider, global) => {
   const getInitialData = () => {
-    const device = storageProvider && storageProvider.getItem(storageKey)
-      ? storageProvider.getItem(storageKey)
-      : deviceDetector.parse(global.userAgent).device
+    if (storageProvider) {
+      const device = storageProvider.getItem(storageKey)
+        ? JSON.parse(storageProvider.getItem(storageKey))
+        : deviceDetector.parse(global.userAgent).device
 
-    storageProvider.setItem(storageKey, device)
+      storageProvider.setItem(storageKey, JSON.stringify(device))
 
-    return device
+      return device
+    }
+
+    if (!storageProvider) {
+      return deviceDetector.parse(global.userAgent).device
+    }
   }
 
   return {
