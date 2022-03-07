@@ -31,13 +31,16 @@ const useDeviceDetector = (
     logicalDevice: logicalDevice,
     isMobile: isMobile,
     toggle: useCallback(() => {
-      setIsMobile(current => !current)
-      setLogicalDevice({ 
+      const toggleDevice = { 
         brand: logicalDevice.brand,
         model: logicalDevice.model,
         type: logicalDevice.type === DESKTOP ? MOBILE : DESKTOP
-      })
-    }, [setIsMobile, logicalDevice])
+      }
+
+      setIsMobile(current => !current)
+      setLogicalDevice(toggleDevice)
+      storageProvider.setItem(storageKey, toggleDevice)
+    }, [storageKey, storageProvider, setIsMobile, logicalDevice])
   }
 }
 

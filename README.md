@@ -34,10 +34,12 @@ You pass `useDeviceDetector` an `initialState` and an optional `deviceDetectorCo
 | Key | Description
 | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `onChange`        | [Comming Soon!] |
-| `storageKey`      | A string that will be used by the `storageProvider` to persist the `logical device data`. If you specify a value of `null`, nothing will be persisted. Default=`logicalDeviceData`. [Comming Soon!]|
-| `storageProvider` | A storage provider. Default = `localStorage`. You will generally never need to change this value. [Comming Soon!]|
+| `storageKey`      | A string that will be used by the `storageProvider` to persist the `logical device data`. If you specify a value of `null`, nothing will be persisted. Default=`logicalDeviceData`. 
+| `storageProvider` | A storage provider. Default = `localStorage`. You will generally never need to change this value.
 
 This version does not provide local storage usage and onChange functions.
+
+[Update - 2022.03.07] - Add function version.1(use local storage)
 
 ### Return object
 
