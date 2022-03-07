@@ -1,9 +1,7 @@
 import { useCallback, useMemo, useState } from 'react'
 
-import DeviceDetector from 'device-detector-js'
 import initialize from './initialize'
 
-const deviceDetector = new DeviceDetector()
 const MOBILE = 'smartphone'
 const DESKTOP = 'desktop'
 
@@ -50,7 +48,7 @@ const useDeviceDetector = (
   const {
     getInitialData
   } = useMemo(
-    () => initialize(deviceDetector, storageKey, storageProvider, global), 
+    () => initialize(storageKey, storageProvider, global), 
     [storageKey, storageProvider, global]
   )
   

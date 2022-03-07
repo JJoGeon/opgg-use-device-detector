@@ -39,7 +39,8 @@ You pass `useDeviceDetector` an `initialState` and an optional `deviceDetectorCo
 
 This version does not provide local storage usage and onChange functions.
 
-[Update - 2022.03.07] - Add function version.1(use local storage)
+[Update - 2022.03.07] - Add function version.1 (use local storage)
+[Update - 2022.03.07] - remove device model and brand (Fixing the bug.)
 
 ### Return object
 
