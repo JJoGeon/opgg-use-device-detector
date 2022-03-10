@@ -3,7 +3,7 @@
   "publishConfig": {
     "tag": "latest"
   },
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "It is a react hook that allows you to check the type of device and change the device logically.",
   "main": "dist/opgg-use-device-detector.js",
   "umd:main": "dist/opgg-use-device-detector.umd.js",
