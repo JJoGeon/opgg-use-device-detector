@@ -14,12 +14,9 @@ const getDeviceData = (userAgent) => {
   }
 }
 
-
 const initialize = (storageKey, storageProvider, global) => {
-  const getInitialData = () => {
-
-
-    if (storageProvider) {
+  const getInitialData = (isPhysical = false) => {
+    if (!isPhysical && storageProvider) {
       const device = storageProvider.getItem(storageKey)
         ? JSON.parse(storageProvider.getItem(storageKey))
         : getDeviceData(global.userAgent)
@@ -29,13 +26,15 @@ const initialize = (storageKey, storageProvider, global) => {
       return device
     }
 
-    if (!storageProvider) {
-      return deviceDetector.parse(global.userAgent).device
+    if (isPhysical || !storageProvider) {
+      return getDeviceData(global.userAgent)
     }
   }
 
   return {
-    getInitialData
+    getInitialData: (isPhysical) => {
+      return getInitialData(isPhysical)
+    }
   }
 }
 

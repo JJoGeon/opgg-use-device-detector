@@ -39,10 +39,17 @@ You pass `useDeviceDetector` an `initialState` and an optional `deviceDetectorCo
 
 This version does not provide local storage usage and onChange functions.
 
-[Update - 2022.03.07] - Add function version.1 (use local storage)  
-[Update - 2022.03.07] - remove device model and brand (Fixing the bug.)  
+2022.03.13
+[BugFix] - Fix the bug where the physical device data is initialized.  
 
-[Ongoing - 2022.03.10] - add `window.navigator.userAgent` parser.
+2022.03.10  
+[Update] - Contributor setting.  
+[Ongoing] - Add `window.navigator.userAgent` parser.  
+[Update] - Remove the defense and lighten the project.  
+
+2022.03.07  
+[Update] - Remove device model and brand (Fixing the bug.)  
+[Update] - Add function version.1 (use local storage)  
 
 ### Return object
 
