@@ -52,8 +52,8 @@ const useDeviceDetector = (
     [storageKey, storageProvider, global]
   )
   
-  const [physicalDevice] = useState(getInitialData)
-  const [logicalDevice, setLogicalDevice] = useState(getInitialData)
+  const [physicalDevice] = useState(getInitialData(true))
+  const [logicalDevice, setLogicalDevice] = useState(getInitialData())
   const [isMobile, setIsMobile] = useState(logicalDevice.type === MOBILE)
 
   return {
