@@ -39,7 +39,7 @@ You pass `useDeviceDetector` an `initialState` and an optional `deviceDetectorCo
 
 This version does not provide local storage usage and onChange functions.
 
-2022.03.13
+2022.03.13  
 [BugFix] - Fix the bug where the physical device data is initialized.  
 
 2022.03.10  
